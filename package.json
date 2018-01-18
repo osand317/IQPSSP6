@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/osand317/IQPSSP6/issues"
   },
-  "homepage": "https://github.com/osand317/IQPSSP6#readme"
+  "homepage": "https://github.com/osand317/IQPSSP6#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "firebase-admin": "^5.8.1",
+    "requirejs": "^2.3.5"
+  }
 }

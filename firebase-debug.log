@@ -1,0 +1,32 @@
+[debug] [2018-01-18T11:11:07.181Z] ----------------------------------------------------------------------
+[debug] [2018-01-18T11:11:07.183Z] Command:       /home/oliver/.nvm/versions/node/v9.4.0/bin/node /home/oliver/.nvm/versions/node/v9.4.0/bin/firebase serve
+[debug] [2018-01-18T11:11:07.183Z] CLI Version:   3.16.0
+[debug] [2018-01-18T11:11:07.183Z] Platform:      linux
+[debug] [2018-01-18T11:11:07.183Z] Node Version:  v9.4.0
+[debug] [2018-01-18T11:11:07.183Z] Time:          Thu Jan 18 2018 06:11:07 GMT-0500 (EST)
+[debug] [2018-01-18T11:11:07.183Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-18T11:11:07.191Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-18T11:11:07.191Z] > authorizing via signed-in user
+[debug] [2018-01-18T11:11:07.193Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/urmatt-app  
+  
+ Thu Jan 18 2018 06:11:07 GMT-0500 (EST)
+[debug] [2018-01-18T11:11:08.530Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-18T11:11:08.531Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/urmatt-app/tokens  
+  
+ Thu Jan 18 2018 06:11:08 GMT-0500 (EST)
+[debug] [2018-01-18T11:11:09.575Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/oliver/git/IQPSSP6'...
+[info] 
+[debug] [2018-01-18T11:11:09.577Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/urmatt-app  
+  
+ Thu Jan 18 2018 06:11:09 GMT-0500 (EST)
+[debug] [2018-01-18T11:11:10.863Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-18T11:11:10.865Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/523826665141/clients/_:getWebAppConfig  
+  
+ Thu Jan 18 2018 06:11:10 GMT-0500 (EST)
+[debug] [2018-01-18T11:11:11.828Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
