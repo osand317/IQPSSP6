@@ -1,6 +1,8 @@
 var submitBtn = document.querySelector("#submitBtn");
 var form = document.querySelector("form");
 var eggInput = document.querySelector("#eggInput");
+var firstNameInput = document.querySelector("#firstName");
+var lastNameInput = document.querySelector("#lastName");
 
 (function() {
     var config = {
@@ -15,31 +17,26 @@ var eggInput = document.querySelector("#eggInput");
 
 }());
 
-var data = {
-    eggs: 5
-};
-
 function submitReport(data){
-    var reportData = {
-        eggs: data.eggs
-    };
 
     // Get a key for a new User
     var newReportKey = firebase.database().ref().child('reports').push().key;
 
     var updates = {};
-    updates['/reports/' + newReportKey] = reportData;
+    updates['/reports/' + newReportKey] = data;
 
     return firebase.database().ref().update(updates);
 }
 
-submitBtn.addEventListener("click", function (e) {
+submitBtn.addEventListener("click", function(e) {
     e.preventDefault();
-    numEggs = eggInput.value;
-    console.log(numEggs);
-    data = {
-        eggs: numEggs
+    var data = {
+        firstName: firstNameInput.value,
+        lastName: lastNameInput.value,
+        eggs: eggInput.value,
+        timestamp: Date.now()
     };
     submitReport(data);
+    form.reset();
 });
 
