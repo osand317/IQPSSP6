@@ -1,4 +1,4 @@
-var button = document.querySelector("button");
+//      var button = document.querySelector("button");
 // Initialize Firebase
 (function() {
     var config = {
